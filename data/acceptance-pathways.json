@@ -5,14 +5,20 @@
   "disclaimer": "لا تعرض هذه البيانات قبولاً مضموناً أو معدلات تنافسية. يلزم نقل كل سجل من دليل الطالب الحالي مع رقم الصفحة والقناة والفرع المؤهل قبل عرضه كنتيجة بحث.",
   "official_sources": [
     {
-      "title": "مركز تحميل دائرة الدراسات والتخطيط والمتابعة",
-      "url": "https://dirasat.mohesr.gov.iq/download-center.html",
+      "title": "دليل الطالب للقبول المركزي 2026-2027",
+      "url": "https://dirasat.mohesr.gov.iq/assets/documents/Docs-2026/%D8%AF%D9%84%D9%8A%D9%84_%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8_%D9%84%D9%84%D8%B9%D8%A7%D9%85_%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A_2026-2027.pdf",
       "publisher": "وزارة التعليم العالي والبحث العلمي",
       "year": "2026-2027"
     },
     {
-      "title": "بوابة دائرة الدراسات والتخطيط والمتابعة",
-      "url": "https://dirasat.mohesr.gov.iq/",
+      "title": "إعلان إطلاق دليل الطالب",
+      "url": "https://www.mohesr.gov.iq/ar/ministrySection/47",
+      "publisher": "وزارة التعليم العالي والبحث العلمي",
+      "year": "2026-2027"
+    },
+    {
+      "title": "مركز تحميل دائرة الدراسات والتخطيط والمتابعة",
+      "url": "https://dirasat.mohesr.gov.iq/download-center.html",
       "publisher": "وزارة التعليم العالي والبحث العلمي",
       "year": "2026-2027"
     },
