@@ -454,6 +454,27 @@ const books=[
     "grades": "الأول الثاني الثالث",
     "tags": "فنون تطبيقية ديكور تربية أسرية"
   },
+  {
+    "title": "المنظور — الفنون التطبيقية، فن الديكور، الثاني (2024)",
+    "desc": "الطبعة الثالثة 2024م، كتاب رسمي لاختصاص فن الديكور.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%88%D8%B1-2_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "فنون تطبيقية ديكور منظور 2024 PDF"
+  },
+  {
+    "title": "فهرس كتب الحاسوب — الاختصاص الرابع",
+    "desc": "فهرس رسمي فرعي؛ راجع اسم الاختصاص ومرحلة الدراسة في الغلاف.",
+    "url": "https://vocational.edu.iq/uploads/pdf/computer/4/1/",
+    "grades": "الأول",
+    "tags": "حاسوب اختصاصات كتب رسمية"
+  },
+  {
+    "title": "فهرس كتب الصناعي — الاختصاص 5، الثاني",
+    "desc": "فهرس رسمي للملفات الصناعية؛ راجع غلاف الكتاب لتحديد المادة والاختصاص.",
+    "url": "https://vocational.edu.iq/uploads/pdf/industrial/5/2/",
+    "grades": "الثاني",
+    "tags": "صناعي كتب اختصاص 5"
+  },
 ];
 function render(){const q=document.getElementById('q').value.trim().toLowerCase(),g=document.getElementById('grade').value;const arr=books.filter(b=>(!q||(b.title+' '+b.desc+' '+b.tags).toLowerCase().includes(q))&&(!g||b.grades.includes(g)));const el=document.getElementById('list');el.replaceChildren();if(!arr.length){const d=document.createElement('div');d.className='empty';d.textContent='ما لقينا نتيجة. جرّب كلمة ثانية أو افتح موقع المديرية الرسمي.';el.appendChild(d);return}arr.forEach(b=>{const a=document.createElement('article');a.className='card';const i=document.createElement('div');i.className='ico';i.textContent='📚';const h=document.createElement('h3');h.textContent=b.title;const p=document.createElement('p');p.textContent=b.desc;const l=document.createElement('a');l.className='link';l.href=b.url;l.target='_blank';l.rel='noopener noreferrer';l.textContent='فتح صفحة الكتب ↗';a.append(i,h,p,l);el.appendChild(a)})}
 document.getElementById('q').addEventListener('input',render);document.getElementById('grade').addEventListener('change',render);render();
