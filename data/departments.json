@@ -1,0 +1,85 @@
+{
+  "academic_year": "2026-2027",
+  "last_verified": "2026-10-16",
+  "notice": "هذا فهرس روابط أولي وليس قائمة رسمية شاملة. لا تُستنتج أهلية القبول من وجود رابط الفرع؛ يجب الرجوع إلى دليل السنة والقناة المعنية.",
+  "sources": [
+    {
+      "name": "المديرية العامة للتعليم المهني",
+      "url": "https://vocational.edu.iq/",
+      "authority": "وزارة التربية"
+    },
+    {
+      "name": "دليل الطالب للقبول المركزي 2026-2027",
+      "url": "https://mohesr.gov.iq/ar/assets/img/uploaded_files/092026.pdf",
+      "authority": "وزارة التعليم العالي والبحث العلمي"
+    },
+    {
+      "name": "مركز تحميل دائرة الدراسات والتخطيط والمتابعة",
+      "url": "https://dirasat.mohesr.gov.iq/download-center.html",
+      "authority": "وزارة التعليم العالي والبحث العلمي"
+    }
+  ],
+  "categories": [
+    {
+      "id": "industrial",
+      "name": "الفروع الصناعية والتقنية",
+      "status": "needs_review",
+      "url": "https://vocational.edu.iq/pages?id=35",
+      "topics": [
+        "الحاسوب وتقنية المعلومات",
+        "الصيانة والتجميع",
+        "التخصصات الصناعية الأخرى"
+      ]
+    },
+    {
+      "id": "commercial-accounting",
+      "name": "المحاسبة التجارية",
+      "status": "official_page_link",
+      "url": "https://vocational.edu.iq/pages?id=27"
+    },
+    {
+      "id": "commercial-administration",
+      "name": "الإدارة التجارية",
+      "status": "official_page_link",
+      "url": "https://vocational.edu.iq/pages?id=28"
+    },
+    {
+      "id": "commercial-tourism",
+      "name": "إدارة السياحة التجارية",
+      "status": "official_page_link",
+      "url": "https://vocational.edu.iq/pages?id=40"
+    },
+    {
+      "id": "agricultural",
+      "name": "الفروع الزراعية",
+      "status": "needs_review",
+      "url": "https://vocational.edu.iq/pages?id=36"
+    },
+    {
+      "id": "other",
+      "name": "الفنون والتخصصات الأخرى",
+      "status": "needs_review",
+      "url": "https://vocational.edu.iq/"
+    }
+  ],
+  "admissions_rules": [
+    {
+      "rule": "eligibility",
+      "value": null,
+      "status": "not_entered",
+      "reason": "يجب استخراجها من دليل الطالب الرسمي بحسب الفرع والقناة والسنة."
+    },
+    {
+      "rule": "minimum_application_average",
+      "value": null,
+      "status": "not_entered",
+      "reason": "لا يُخلط مع الحد التنافسي للقبول."
+    },
+    {
+      "rule": "competitive_minimum",
+      "value": null,
+      "status": "not_entered",
+      "reason": "لا توجد بيانات موثقة مدخلة في هذه النسخة."
+    }
+  ]
+}
