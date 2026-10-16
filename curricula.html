@@ -7,7 +7,7 @@
 <section class="hero"><div class="container"><small>مكتبة تعليمية</small><h1>الكتب والمناهج الدراسية</h1><p>اختَر الفرع المهني للوصول إلى صفحات الكتب المنشورة من المديرية العامة للتعليم المهني. راجع اسم الكتاب والصف والطبعة قبل الاعتماد عليها.</p></div></section>
 <main class="main"><div class="container">
 <div class="filters"><div class="field"><label for="q">ابحث عن فرع أو قسم</label><input id="q" placeholder="مثلاً: صناعي، تجاري، محاسبة..."></div><div class="field"><label for="grade">الصف الدراسي</label><select id="grade"><option value="">كل الصفوف</option><option>الأول</option><option>الثاني</option><option>الثالث</option></select></div></div>
-<div class="note">تنبيه: الفهرس يجمع روابط كتب PDF منشورة من المديرية وصفحات الفروع. قد تختلف الطبعة المطلوبة حسب العام والصف؛ تأكد من المدرسة قبل الدراسة. ليس هذا فهرساً كاملاً لكل الكتب، والبحث والفلترة يطبّقان على جميع البطاقات.</div><h2>الكتب وصفحات الفروع</h2>
+<div class="note">تم توسيع الفهرس دفعة واحدة ليضم كتباً مباشرة وفهارس رسمية للفروع والمراحل. الكتب ذات الإصدارات الأقدم موضّح أنها تحتاج تأكيد المدرسة؛ وجود رابط رسمي لا يعني وحده أن الطبعة معتمدة حالياً.</div><h2>الكتب وصفحات الفروع</h2>
 <div class="grid" id="list"></div>
 <div class="source"><strong>المصدر الرسمي</strong><p>المديرية العامة للتعليم المهني — وزارة التربية العراقية.</p><a href="https://vocational.edu.iq/" target="_blank" rel="noopener noreferrer">زيارة الموقع الرسمي ↗</a></div>
 </div></main><footer><div class="container">© 2026 بوابة المهني — منصة تعليمية مستقلة، غير تابعة لجهة حكومية.</div></footer>
@@ -160,6 +160,111 @@ const books=[
     "grades": "الأول الثاني الثالث",
     "tags": "فنون تطبيقية ديكور"
   }
+  {
+    "title": "التدريب العملي — صيانة المصاعد الكهربائية — الأول (2025)",
+    "desc": "الطبعة السادسة 2025م، اختصاص صيانة المصاعد الكهربائية.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/2025%D8%B9%D9%85%D9%84%D9%8A-%D8%A7%D9%88%D9%84-%D9%85%D8%B5%D8%A7%D8%B9%D8%AF_compressed-1.pdf",
+    "grades": "الأول",
+    "tags": "صناعي مصاعد كهربائية تدريب عملي 2025 PDF"
+  },
+  {
+    "title": "التدريب العملي — الأجهزة الطبية — الأول (2025)",
+    "desc": "الطبعة الثانية عشرة 2025م، اختصاص الأجهزة الطبية.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D8%AC%D9%87%D8%B2%D8%A9-%D8%B7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%88%D9%84-2025_compressed.pdf",
+    "grades": "الأول",
+    "tags": "صناعي أجهزة طبية تدريب عملي 2025 PDF"
+  },
+  {
+    "title": "العلوم الصناعية — اللحام وتشكيل المعادن — الثاني (2025)",
+    "desc": "الطبعة الرابعة 2025م، اختصاص اللحام وتشكيل المعادن.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%B9%D9%84%D9%88%D9%85-2-%D9%84%D8%AD%D8%A7%D9%85-2025_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "صناعي لحام تشكيل المعادن علوم صناعية 2025 PDF"
+  },
+  {
+    "title": "التخطيط والألوان — الفنون التطبيقية — الأول (2025)",
+    "desc": "الطبعة السابعة 2025م، الفنون التطبيقية.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7-%D9%88%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86-%D8%AA%D8%B9%D8%AF%D9%8A%D9%84-%D8%B3%D9%86%D8%A9-2025_compressed.pdf",
+    "grades": "الأول",
+    "tags": "فنون تطبيقية تخطيط ألوان 2025 PDF"
+  },
+  {
+    "title": "أسس التصميم — الفنون التطبيقية — الأول (2025)",
+    "desc": "الطبعة الثامنة 2025م، لاختصاصي فن التربية الأسرية وفن الديكور.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%A7%D8%B3%D8%B3-%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85-2025_compressed.pdf",
+    "grades": "الأول",
+    "tags": "فنون تطبيقية ديكور تربية أسرية تصميم 2025 PDF"
+  },
+  {
+    "title": "المحاسبة المتوسطة — التجاري (طبعة 2024)",
+    "desc": "كتاب رسمي منشور للفرع التجاري؛ إصدار 2024، تحقق من اعتماد المدرسة.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9_compressed.pdf",
+    "grades": "الثاني الثالث",
+    "tags": "تجاري محاسبة محاسبة متوسطة 2024 PDF"
+  },
+  {
+    "title": "الرياضيات المالية — التجاري (طبعة 2024)",
+    "desc": "كتاب رسمي منشور، الطبعة الثالثة 2024م؛ تحقق من الصف والاعتماد الحالي.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-2024_compressed.pdf",
+    "grades": "الثاني الثالث",
+    "tags": "تجاري محاسبة رياضيات مالية 2024 PDF"
+  },
+  {
+    "title": "الرسم الصناعي — الثاني (المكنة الزراعية)",
+    "desc": "كتاب رسمي منشور بإصدار أقدم؛ راجع المدرسة للتأكد من اعتماده.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%B1%D8%B3%D9%85-%D9%85%D9%83%D8%A7%D8%A6%D9%86-%D8%AB%D8%A7%D9%86%D9%8A-2021_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "صناعي زراعي مكننة رسم صناعي 2021 PDF"
+  },
+  {
+    "title": "فهرس كتب الفرع الصناعي — جميع المراحل",
+    "desc": "صفحة المديرية الرسمية للوصول إلى كتب الأقسام الصناعية والتخصصية.",
+    "url": "https://vocational.edu.iq/pages?id=35",
+    "grades": "الأول الثاني الثالث",
+    "tags": "صناعي ميكانيك كهرباء حاسوب مصاعد أجهزة طبية"
+  },
+  {
+    "title": "فهرس كتب الفرع الزراعي — جميع المراحل",
+    "desc": "صفحة المديرية الرسمية للكتب الزراعية، مع توفر فهارس فرعية حسب المرحلة.",
+    "url": "https://vocational.edu.iq/pages?id=36",
+    "grades": "الأول الثاني الثالث",
+    "tags": "زراعي محاصيل زراعة"
+  },
+  {
+    "title": "فهرس الكتب الزراعية — الصف الأول",
+    "desc": "مجلد رسمي لكتب الفرع الزراعي للمرحلة الأولى.",
+    "url": "https://vocational.edu.iq/uploads/pdf/agricultural/1/",
+    "grades": "الأول",
+    "tags": "زراعي كتب المرحلة الأولى"
+  },
+  {
+    "title": "فهرس الكتب الزراعية — الصف الثاني",
+    "desc": "مجلد رسمي لكتب الفرع الزراعي للمرحلة الثانية.",
+    "url": "https://vocational.edu.iq/uploads/pdf/agricultural/2/",
+    "grades": "الثاني",
+    "tags": "زراعي كتب المرحلة الثانية"
+  },
+  {
+    "title": "فهرس الكتب الزراعية — الصف الثالث",
+    "desc": "مجلد رسمي لكتب الفرع الزراعي للمرحلة الثالثة.",
+    "url": "https://vocational.edu.iq/uploads/pdf/agricultural/3/",
+    "grades": "الثالث",
+    "tags": "زراعي كتب المرحلة الثالثة"
+  },
+  {
+    "title": "فهرس كتب الفنون التطبيقية — جميع المراحل",
+    "desc": "مجلدات رسمية تتضمن الكتب حسب الصف والاختصاص.",
+    "url": "https://vocational.edu.iq/uploads/pdf/Applied%20Arts/1/",
+    "grades": "الأول الثاني الثالث",
+    "tags": "فنون تطبيقية ديكور تربية أسرية"
+  },
+  {
+    "title": "فهرس كتب الحاسوب — المرحلة الثانية",
+    "desc": "مجلد رسمي يضم ملفات منشورة لاختصاص الحاسوب؛ طابق اسم المادة مع المنهج.",
+    "url": "https://vocational.edu.iq/uploads/pdf/computer/1/2/",
+    "grades": "الثاني",
+    "tags": "حاسوب شبكات صيانة تجميع"
+  },
 ];
 function render(){const q=document.getElementById('q').value.trim().toLowerCase(),g=document.getElementById('grade').value;const arr=books.filter(b=>(!q||(b.title+' '+b.desc+' '+b.tags).toLowerCase().includes(q))&&(!g||b.grades.includes(g)));const el=document.getElementById('list');el.replaceChildren();if(!arr.length){const d=document.createElement('div');d.className='empty';d.textContent='ما لقينا نتيجة. جرّب كلمة ثانية أو افتح موقع المديرية الرسمي.';el.appendChild(d);return}arr.forEach(b=>{const a=document.createElement('article');a.className='card';const i=document.createElement('div');i.className='ico';i.textContent='📚';const h=document.createElement('h3');h.textContent=b.title;const p=document.createElement('p');p.textContent=b.desc;const l=document.createElement('a');l.className='link';l.href=b.url;l.target='_blank';l.rel='noopener noreferrer';l.textContent='فتح صفحة الكتب ↗';a.append(i,h,p,l);el.appendChild(a)})}
 document.getElementById('q').addEventListener('input',render);document.getElementById('grade').addEventListener('change',render);render();
