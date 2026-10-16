@@ -1,0 +1,47 @@
+{
+  "academic_year": "2026-2027",
+  "updated_on": "2026-10-16",
+  "status": "official_guide_published_records_not_yet_extracted",
+  "disclaimer": "لا تعرض هذه البيانات قبولاً مضموناً أو معدلات تنافسية. يلزم نقل كل سجل من دليل الطالب الحالي مع رقم الصفحة والقناة والفرع المؤهل قبل عرضه كنتيجة بحث.",
+  "official_sources": [
+    {
+      "title": "مركز تحميل دائرة الدراسات والتخطيط والمتابعة",
+      "url": "https://dirasat.mohesr.gov.iq/download-center.html",
+      "publisher": "وزارة التعليم العالي والبحث العلمي",
+      "year": "2026-2027"
+    },
+    {
+      "title": "بوابة دائرة الدراسات والتخطيط والمتابعة",
+      "url": "https://dirasat.mohesr.gov.iq/",
+      "publisher": "وزارة التعليم العالي والبحث العلمي",
+      "year": "2026-2027"
+    },
+    {
+      "title": "المديرية العامة للتعليم المهني",
+      "url": "https://vocational.edu.iq/",
+      "publisher": "وزارة التربية",
+      "year": "current"
+    }
+  ],
+  "records": [],
+  "required_fields": [
+    "institution_name",
+    "college_or_institute",
+    "department_name",
+    "eligible_vocational_branch_and_specialty",
+    "study_channel",
+    "academic_year",
+    "eligibility_conditions",
+    "minimum_application_average",
+    "competitive_cutoff_if_officially_published",
+    "official_source_url",
+    "guide_page_number",
+    "last_verified"
+  ],
+  "validation_rules": [
+    "لا تخلط بين أهلية التقديم والحد الأدنى للتقديم والحد التنافسي الفعلي.",
+    "لا تستخدم حدود سنة سابقة على أنها حدود سنة 2026-2027.",
+    "لا تضف سجلاً من منشور غير رسمي ما لم تتم مطابقته مع المصدر الرسمي.",
+    "إذا تعذر التحقق من المعلومة، اتركها فارغة وعلّم السجل بأنه قيد التوثيق."
+  ]
+}
