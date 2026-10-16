@@ -475,6 +475,41 @@ const books=[
     "grades": "الثاني",
     "tags": "صناعي كتب اختصاص 5"
   },
+  {
+    "title": "اللغة الإنكليزية والمراسلات التجارية — الثاني التجاري (2025)",
+    "desc": "English Book and Commercial Letters Book 2، الطبعة الرابعة 2025م.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D8%AB%D8%A7%D9%86%D9%8A_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "تجاري إنكليزي مراسلات تجارية English 2025 PDF"
+  },
+  {
+    "title": "اللغة الإنكليزية والمراسلات التجارية — الثالث التجاري (2025)",
+    "desc": "English Book and Commercial Letters Book 3، الطبعة السادسة 2025م.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D8%AB%D8%A7%D9%84%D8%AB_compressed.pdf",
+    "grades": "الثالث",
+    "tags": "تجاري إنكليزي مراسلات تجارية English 2025 PDF"
+  },
+  {
+    "title": "اللغة الإنكليزية — الثاني الزراعي (2025)",
+    "desc": "English for Schools of Agriculture Book 2، الطبعة السادسة 2025م.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A-%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A-%D8%AB%D8%A7%D9%86%D9%8A-2025_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "زراعي إنكليزي English 2025 PDF"
+  },
+  {
+    "title": "اللغة الإنكليزية — الثالث للفنون التطبيقية (2025)",
+    "desc": "English for Schools of Applied Arts Book 3، الطبعة التاسعة 2025م.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%AA%D8%B7%D9%8A%D8%A8%D9%8A%D9%82%D8%A9-2025_compressed.pdf",
+    "grades": "الثالث",
+    "tags": "فنون تطبيقية إنكليزي English 2025 PDF"
+  },
+  {
+    "title": "اللغة الإنكليزية — الأول الصناعي",
+    "desc": "English for Vocational Schools Book 1، منشور على الموقع الرسمي؛ طابق الطبعة مع المدرسة.",
+    "url": "https://www.vocational.edu.iq/wp-content/uploads/2024/01/%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A-%D8%A7%D9%88%D9%84-%D8%B5%D9%86%D8%A7%D8%B9%D9%8A.pdf",
+    "grades": "الأول",
+    "tags": "صناعي إنكليزي English 1 PDF"
+  },
 ];
 function render(){const q=document.getElementById('q').value.trim().toLowerCase(),g=document.getElementById('grade').value;const arr=books.filter(b=>(!q||(b.title+' '+b.desc+' '+b.tags).toLowerCase().includes(q))&&(!g||b.grades.includes(g)));const el=document.getElementById('list');el.replaceChildren();if(!arr.length){const d=document.createElement('div');d.className='empty';d.textContent='ما لقينا نتيجة. جرّب كلمة ثانية أو افتح موقع المديرية الرسمي.';el.appendChild(d);return}arr.forEach(b=>{const a=document.createElement('article');a.className='card';const i=document.createElement('div');i.className='ico';i.textContent='📚';const h=document.createElement('h3');h.textContent=b.title;const p=document.createElement('p');p.textContent=b.desc;const l=document.createElement('a');l.className='link';l.href=b.url;l.target='_blank';l.rel='noopener noreferrer';l.textContent='فتح صفحة الكتب ↗';a.append(i,h,p,l);el.appendChild(a)})}
 document.getElementById('q').addEventListener('input',render);document.getElementById('grade').addEventListener('change',render);render();
