@@ -419,6 +419,41 @@ const books=[
     "grades": "الثاني",
     "tags": "صناعي اختصاصات كتب PDF"
   },
+  {
+    "title": "الرياضيات — الثاني الزراعي والفنون التطبيقية (2024)",
+    "desc": "كتاب منشور من المديرية، للفرع الزراعي والفنون التطبيقية؛ إصدار 2024 يحتاج مطابقة المدرسة.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2025/01/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%AB%D8%A7%D9%86%D9%8A-%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A-%D9%81%D9%86%D9%88%D9%8624_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "رياضيات زراعي فنون تطبيقية 2024 PDF"
+  },
+  {
+    "title": "المواد العامة — فهرس الكتب الرسمي",
+    "desc": "ارجع إلى فهرس المديرية للعثور على المواد العامة المشتركة، وتحقق من الصف والطبعة من الغلاف.",
+    "url": "https://vocational.edu.iq/",
+    "grades": "الأول الثاني الثالث",
+    "tags": "عربي إنكليزي إسلامية رياضيات مواد عامة"
+  },
+  {
+    "title": "فهرس كتب التعليم المهني — جميع الفروع",
+    "desc": "بوابة المديرية الرسمية، المرجع الأوسع للوصول إلى فهارس الأقسام والكتب المنشورة.",
+    "url": "https://vocational.edu.iq/",
+    "grades": "الأول الثاني الثالث",
+    "tags": "جميع الفروع الكتب الرسمية التعليم المهني"
+  },
+  {
+    "title": "فهرس كتب الحاسوب وتقنية المعلومات — جميع المراحل",
+    "desc": "مجلدات رسمية بحسب التصنيف؛ أسماء بعض الملفات رمزية وقد تتطلب فتح الملف للتحقق.",
+    "url": "https://vocational.edu.iq/uploads/pdf/computer/",
+    "grades": "الأول الثاني الثالث",
+    "tags": "حاسوب صيانة شبكات تجميع كتب"
+  },
+  {
+    "title": "فهرس كتب الفنون التطبيقية — جميع المراحل",
+    "desc": "المجلد الرسمي للملفات المنشورة للفنون التطبيقية؛ بعض أسماء الملفات ليست أسماء كتب.",
+    "url": "https://vocational.edu.iq/uploads/pdf/Applied%20Arts/",
+    "grades": "الأول الثاني الثالث",
+    "tags": "فنون تطبيقية ديكور تربية أسرية"
+  },
 ];
 function render(){const q=document.getElementById('q').value.trim().toLowerCase(),g=document.getElementById('grade').value;const arr=books.filter(b=>(!q||(b.title+' '+b.desc+' '+b.tags).toLowerCase().includes(q))&&(!g||b.grades.includes(g)));const el=document.getElementById('list');el.replaceChildren();if(!arr.length){const d=document.createElement('div');d.className='empty';d.textContent='ما لقينا نتيجة. جرّب كلمة ثانية أو افتح موقع المديرية الرسمي.';el.appendChild(d);return}arr.forEach(b=>{const a=document.createElement('article');a.className='card';const i=document.createElement('div');i.className='ico';i.textContent='📚';const h=document.createElement('h3');h.textContent=b.title;const p=document.createElement('p');p.textContent=b.desc;const l=document.createElement('a');l.className='link';l.href=b.url;l.target='_blank';l.rel='noopener noreferrer';l.textContent='فتح صفحة الكتب ↗';a.append(i,h,p,l);el.appendChild(a)})}
 document.getElementById('q').addEventListener('input',render);document.getElementById('grade').addEventListener('change',render);render();
