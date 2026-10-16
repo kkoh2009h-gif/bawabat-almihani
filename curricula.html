@@ -510,6 +510,48 @@ const books=[
     "grades": "الأول",
     "tags": "صناعي إنكليزي English 1 PDF"
   },
+  {
+    "title": "الأشغال اليدوية — الفنون التطبيقية، فن الديكور، الثاني (2025)",
+    "desc": "الطبعة الرابعة 2025م، الفنون التطبيقية/فن الديكور/الصف الثاني.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%A7%D9%84%D8%A7%D8%B4%D8%BA%D8%A7%D9%84-%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%8A%D8%A9_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "فنون تطبيقية ديكور أشغال يدوية 2025 PDF"
+  },
+  {
+    "title": "تقنيات الديكور — الفنون التطبيقية، الثاني (2025)",
+    "desc": "الطبعة الرابعة 2025م، اختصاص فن الديكور.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/02/%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%8A%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A_compressed.pdf",
+    "grades": "الثاني",
+    "tags": "فنون تطبيقية ديكور تقنيات 2025 PDF"
+  },
+  {
+    "title": "فن الأناقة والأزياء — الفنون التطبيقية، التربية الأسرية، الثالث (2025)",
+    "desc": "الطبعة الخامسة 2025م، اختصاص فن التربية الأسرية.",
+    "url": "https://vocational.edu.iq/wp-content/uploads/2026/03/%D9%81%D9%86-%D8%A7%D9%84%D8%A7%D9%86%D8%A7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D8%B2%D9%8A%D8%A7%D8%A1-%D8%AB%D8%A7%D9%84%D8%AB-%D8%A7%D8%B3%D8%B1%D9%8A%D8%A9_compressed-1.pdf",
+    "grades": "الثالث",
+    "tags": "فنون تطبيقية تربية أسرية أناقة أزياء 2025 PDF"
+  },
+  {
+    "title": "قسم شبكات الحاسوب — الكتب الرسمية",
+    "desc": "فهرس المديرية حسب الاختصاص؛ يشمل ملفات الكتب المنشورة بحسب المراحل.",
+    "url": "https://vocational.edu.iq/pages?id=32",
+    "grades": "الأول الثاني الثالث",
+    "tags": "حاسوب شبكات"
+  },
+  {
+    "title": "قسم أجهزة الهاتف والحاسوب المحمولة — الكتب الرسمية",
+    "desc": "فهرس رسمي لاختصاص أجهزة الهاتف والحاسوب المحمولة.",
+    "url": "https://vocational.edu.iq/pages?id=33",
+    "grades": "الأول الثاني الثالث",
+    "tags": "حاسوب هاتف أجهزة محمولة"
+  },
+  {
+    "title": "قسم الإدارة الإلكترونية — الكتب الرسمية",
+    "desc": "فهرس رسمي لاختصاص الإدارة الإلكترونية.",
+    "url": "https://vocational.edu.iq/pages?id=34",
+    "grades": "الأول الثاني الثالث",
+    "tags": "حاسوب إدارة إلكترونية"
+  },
 ];
 function render(){const q=document.getElementById('q').value.trim().toLowerCase(),g=document.getElementById('grade').value;const arr=books.filter(b=>(!q||(b.title+' '+b.desc+' '+b.tags).toLowerCase().includes(q))&&(!g||b.grades.includes(g)));const el=document.getElementById('list');el.replaceChildren();if(!arr.length){const d=document.createElement('div');d.className='empty';d.textContent='ما لقينا نتيجة. جرّب كلمة ثانية أو افتح موقع المديرية الرسمي.';el.appendChild(d);return}arr.forEach(b=>{const a=document.createElement('article');a.className='card';const i=document.createElement('div');i.className='ico';i.textContent='📚';const h=document.createElement('h3');h.textContent=b.title;const p=document.createElement('p');p.textContent=b.desc;const l=document.createElement('a');l.className='link';l.href=b.url;l.target='_blank';l.rel='noopener noreferrer';l.textContent='فتح صفحة الكتب ↗';a.append(i,h,p,l);el.appendChild(a)})}
 document.getElementById('q').addEventListener('input',render);document.getElementById('grade').addEventListener('change',render);render();
